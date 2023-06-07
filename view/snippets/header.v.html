@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='ISO-8859-1'>
+    <title>
+        <?=StationName?> -
+            <?=StationSlogan?>
+    </title>
+
+    <link rel="stylesheet" href="view/scss/style.css" />
+    <link rel="icon" type="image/x-icon" href="<?=StationLogo?>">
+    <script src="https://kit.fontawesome.com/50a5224e09.js" crossorigin="anonymous"></script>
+    <script src="view/js/popper.min.js"></script>
+    <script src="view/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="view/js/script.js"></script>
+</head>
+
+<body onload="onLoader('<?=(isset($_GET['a']) ? $_GET['a'] : 'history')?>')">

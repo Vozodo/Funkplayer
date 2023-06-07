@@ -1,0 +1,26 @@
+<div class="container mt-3 mb-3">
+    <?php for ($i=0; $i <= H_SIZE ; $i++): ?>
+    <div class="row mb-3 align-items-center invisible" id="row_<?=$i?>">
+        <div class="col-sm-4">
+            <div class="text-center">
+                <img src="" alt="" class="rounded" width="150vw" id="img_<?=$i?>" />
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-center">
+                <p class="fs-4" id="name_<?=$i?>">
+                    <b></b>
+                </p>
+                <p class="fs-4" id="artist_<?=$i?>">
+
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-center">
+                <p class="fs-4" id="time_<?=$i?>"></p>
+            </div>
+        </div>
+    </div>
+    <?php endfor;?>
+</div>
