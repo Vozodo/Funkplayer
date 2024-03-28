@@ -79,13 +79,13 @@ class song
 		if ($AsObject && !$FullLink) {
 			foreach ($Songs as $Song) {
 				$Song = new song($Song);
-				$Song->setSongImage("songimage?t=" . $Song->getSongPlayed());
+				$Song->setSongImage("index.php?a=songimage&t==" . $Song->getSongPlayed());
 				$History[] = $Song;
 			}
 		} elseif (!$AsObject && !$FullLink) {
 			foreach ($Songs as $Song) {
 				$Song = new song($Song);
-				$Song->setSongImage("songimage?t=" . $Song->getSongPlayed());
+				$Song->setSongImage("index.php?a=songimage&t=" . $Song->getSongPlayed());
 				$History[] = $Song->toArray();
 			}
 		} elseif ($AsObject && $FullLink) {
